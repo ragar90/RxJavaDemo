@@ -4,7 +4,7 @@ package com.androiddevelopersv.rxjava.rxjavademo.api.Models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Stat {
+public class StatContainer {
 
     @SerializedName("base_stat")
     @Expose
@@ -14,7 +14,7 @@ public class Stat {
     private Integer effort;
     @SerializedName("stat")
     @Expose
-    private Stat_ stat;
+    private Stat stat;
 
     public Integer getBaseStat() {
         return baseStat;
@@ -32,11 +32,11 @@ public class Stat {
         this.effort = effort;
     }
 
-    public Stat_ getStat() {
+    public Stat getStat() {
         return stat;
     }
 
-    public void setStat(Stat_ stat) {
+    public void setStat(Stat stat) {
         this.stat = stat;
     }
 

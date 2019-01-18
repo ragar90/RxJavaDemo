@@ -34,9 +34,9 @@ public class Pokemon {
     @SerializedName("sprites")
     @Expose
     private Sprites sprites;
-    @SerializedName("abilities")
+    @SerializedName("abilityContainers")
     @Expose
-    private List<AbilityContainer> abilities = null;
+    private List<AbilityContainer> abilityContainers = null;
     @SerializedName("forms")
     @Expose
     private List<Form> forms = null;
@@ -52,9 +52,9 @@ public class Pokemon {
     @SerializedName("species")
     @Expose
     private Species species;
-    @SerializedName("stats")
+    @SerializedName("statContainers")
     @Expose
-    private List<Stat> stats = null;
+    private List<StatContainer> statContainers = null;
     @SerializedName("types")
     @Expose
     private List<Type> types = null;
@@ -131,12 +131,12 @@ public class Pokemon {
         this.sprites = sprites;
     }
 
-    public List<AbilityContainer> getAbilities() {
-        return abilities;
+    public List<AbilityContainer> getAbilityContainers() {
+        return abilityContainers;
     }
 
-    public void setAbilities(List<AbilityContainer> abilities) {
-        this.abilities = abilities;
+    public void setAbilityContainers(List<AbilityContainer> abilityContainers) {
+        this.abilityContainers = abilityContainers;
     }
 
     public List<Form> getForms() {
@@ -179,12 +179,12 @@ public class Pokemon {
         this.species = species;
     }
 
-    public List<Stat> getStats() {
-        return stats;
+    public List<StatContainer> getStatContainers() {
+        return statContainers;
     }
 
-    public void setStats(List<Stat> stats) {
-        this.stats = stats;
+    public void setStatContainers(List<StatContainer> statContainers) {
+        this.statContainers = statContainers;
     }
 
     public List<Type> getTypes() {

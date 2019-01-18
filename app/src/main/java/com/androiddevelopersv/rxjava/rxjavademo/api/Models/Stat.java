@@ -4,7 +4,7 @@ package com.androiddevelopersv.rxjava.rxjavademo.api.Models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Stat_ {
+public class Stat {
 
     @SerializedName("name")
     @Expose
