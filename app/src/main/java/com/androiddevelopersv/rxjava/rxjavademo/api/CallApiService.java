@@ -26,13 +26,13 @@ public class CallApiService {
   }
 
 
-  void getPokemon(String idOrNane, Callback<Pokemon> callback){
+  public void getPokemon(String idOrNane, Callback<Pokemon> callback){
     pokemonService.getPokemon(idOrNane).enqueue(callback);
   }
 
   //region Static Setup Methods
 
-  private static CallApiService getInstance(){
+  public static CallApiService getInstance(){
     if(instance == null){
       instance = new CallApiService(true);
     }

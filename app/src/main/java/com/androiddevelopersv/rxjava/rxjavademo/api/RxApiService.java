@@ -24,14 +24,14 @@ public class RxApiService {
   }
 
   //region Services Calls
-  Observable<Pokemon> getPokemon(String idOrNane){
+  public Observable<Pokemon> getPokemon(String idOrNane){
     return pokemonService.getPokemon(idOrNane);
   }
   //endregion
 
   //region Static Setup Methods
 
-  private static RxApiService getInstance(){
+  public static RxApiService getInstance(){
     if(instance == null){
       instance = new RxApiService(true);
     }

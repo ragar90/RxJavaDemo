@@ -1,6 +1,9 @@
 
 package com.androiddevelopersv.rxjava.rxjavademo.api.Models;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
+
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -58,6 +61,17 @@ public class Pokemon {
     @SerializedName("types")
     @Expose
     private List<Type> types = null;
+
+
+    private Bitmap sprite;
+
+    public Bitmap getSprite() {
+        return sprite;
+    }
+
+    public void setSprite(Bitmap sprite) {
+        this.sprite = sprite;
+    }
 
     public Integer getId() {
         return id;
